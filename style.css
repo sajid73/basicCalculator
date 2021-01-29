@@ -1,4 +1,29 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
+    border: 2px solid aqua;
+} */
+body{
+    padding: 1%;
+}
+.intro-area{
+    margin: 5vh;
+}
+h1, h2{
+    margin: auto;
+    text-align: center;
+}
+.form-section{
+    background: rgba(169, 169, 169, 0.192);
+    border-radius: 2rem;
+    box-shadow: 10px 10px 40px rgb(219, 219, 219);
+    margin: 10% auto;
+    padding: 2rem;
+    width: fit-content;
+}
+#hello{
+    display: none;
+}
+#whitebtn{
+    display: none;
 }

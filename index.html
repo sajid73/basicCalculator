@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>My Account</title>
 </head>
-<body>
+<body id="bodyId">
+  <button onclick="hideArea(true)" id="blackbtn" class="btn btn-dark">Dark</button>
+  <button onclick="hideArea(false)" id="whitebtn" class="btn btn-primary">White</button>
+  <section id="introarea" class="intro-area">
+        <h1>Welcome to Pioneer Bank</h1>
+    <h2>Agrabaad Branch</h2>
+    <form class="form-section">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input placeholder="Enter your email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input placeholder="Enter your password" type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button onclick="changeArea()" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
     
+    <script src="script.js"></script>
 </body>
 </html>
